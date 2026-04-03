@@ -1,0 +1,9 @@
+﻿numpy>=1.24
+opencv-python>=4.8
+matplotlib>=3.7
+albumentations>=1.4
+timm>=0.9
+piqa>=1.3
+requests>=2.31
+torch
+torchvision

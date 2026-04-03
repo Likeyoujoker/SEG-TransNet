@@ -1,0 +1,12 @@
+﻿{
+  "task": "segtransnet_sr_classical_patch48_x4_seg",
+  "model": "plain",
+  "gpu_ids": [0],
+  "dist": false,
+  "scale": 4,
+  "n_channels": 3,
+  "path": {"root": "experiments", "pretrained_netG": "weights/your_trained_model.pth", "pretrained_netE": null, "pretrained_optimizerG": null, "log": "experiments/segtransnet_sr_classical_patch48_x4_seg", "options": "experiments/segtransnet_sr_classical_patch48_x4_seg/options", "images": "experiments/segtransnet_sr_classical_patch48_x4_seg/test_images", "models": "experiments/segtransnet_sr_classical_patch48_x4_seg/models"},
+  "datasets": {"test": {"name": "DeepCrack_test", "dataset_type": "sr", "dataroot_H": "datasets/Crack_test_x4/GT", "dataroot_L": "datasets/Crack_test_x4/LR_bicubic", "phase": "test", "scale": 4, "n_channels": 3, "H_size": 192}},
+  "netG": {"net_type": "segtransnet", "upscale": 4, "in_chans": 3, "img_size": 64, "window_size": 8, "img_range": 1.0, "depths": [6, 6, 6, 6, 6, 6], "embed_dim": 180, "num_heads": [6, 6, 6, 6, 6, 6], "mlp_ratio": 2, "upsampler": "pixelshuffle", "resi_connection": "1conv", "init_type": "default", "use_seg": true, "seg_insert_layer": 1},
+  "train": {"G_lossfn_type": "l1+ssim+grad", "G_lossfn_weight": [0.6, 0.2, 0.2], "E_decay": 0.999, "G_optimizer_type": "adam", "G_optimizer_lr": 1e-5, "G_optimizer_wd": 1e-4, "G_optimizer_clipgrad": null, "G_optimizer_reuse": false, "G_scheduler_type": "CosineAnnealingLR", "G_scheduler_T_max": 150000, "G_scheduler_eta_min": 1e-7, "G_regularizer_orthstep": null, "G_regularizer_clipstep": null, "G_param_strict": false, "E_param_strict": true, "checkpoint_test": 5000, "checkpoint_save": 5000, "checkpoint_print": 100}
+}
