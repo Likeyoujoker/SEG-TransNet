@@ -12,7 +12,7 @@ This release keeps only the code path required to reproduce the paper's core cra
 
 ## Environment
 
-- Python 3.8 or 3.10
+- Python 3.10
 - PyTorch with CUDA support recommended
 - Single-GPU execution is the default assumption in the cleaned configs
 
