@@ -2,7 +2,7 @@
 
 This repository contains the cleaned, minimal reproducible code package prepared for the manuscript currently under submission.
 
-This repository is directly related to the manuscript currently submitted to The Visual Computer.
+This repository is directly related to the manuscript “Preserving Thin Geometry: Sequential Edge Gating for Structure-Aware Crack Image Super-Resolution,” currently submitted to The Visual Computer.
 
 If you use this code, please cite the related manuscript together with any upstream work it builds on.
 
