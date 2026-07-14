@@ -56,3 +56,15 @@ Baseline:
 4. Run evaluation with `options/test_seg_paper.json`.
 5. Compare against the retained baseline config `options/train_original.json` and `options/test_original.json`.
 
+## Availability of datasets and checkpoints
+
+- Public datasets are not redistributed in this repository and must be
+  downloaded from their official sources.
+- The self-collected cross-domain dataset is not included; its
+  availability is described in the manuscript.
+- Training configurations, dataset split files, inference code, and
+  evaluation scripts are publicly provided.
+- Trained checkpoints are not deposited in this repository. They may
+  be requested from the corresponding author for non-commercial
+  research use.
+
